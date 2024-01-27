@@ -46,7 +46,7 @@ private int damage = 5;
           RaycastHit hit;
           if (Physics.Raycast(rayFrom, out hit, range))
           {
-              if (hit.collider.CompareTag("Enemy-1"))
+              if (hit.collider.CompareTag("hitbox"))
               {
                   Debug.Log("HIT;" + damage);
                   hit.collider.GetComponent<EnemyHealth>().TakeDamage(damage);

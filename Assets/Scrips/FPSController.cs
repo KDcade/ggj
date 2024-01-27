@@ -75,5 +75,10 @@ public class FPSController : MonoBehaviour
         }
  
         #endregion
+
+        if (PlayerHealth.amIDead == true)
+        {
+            characterController.enabled = false;
+        }
     }
 }
