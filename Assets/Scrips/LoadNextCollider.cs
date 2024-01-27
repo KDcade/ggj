@@ -5,8 +5,11 @@ using UnityEngine;
 public class LoadNextCollider : MonoBehaviour
 {
 
-    private void OnTriggerEnter()
+    private void OnTriggerStay()
     {
+        if (Input.GetButtonDown("nextLevel"))
+        {
         FindObjectOfType<gameManager>().LoadNextScene();
+        }
     }
 }
