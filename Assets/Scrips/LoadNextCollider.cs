@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class LoadNextCollider : MonoBehaviour
 {
-
-    private void OnTriggerStay()
+    
+    private void OnTriggerStay(Collider Player)
     {
-        if (Input.GetButtonDown("nextLevel"))
+        if(Player.tag == "Player")
         {
-        FindObjectOfType<gameManager>().LoadNextScene();
+            if (Input.GetButtonDown("nextLevel"))
+            {
+                FindObjectOfType<gameManager>().LoadNextScene();
+            }
         }
     }
 }
