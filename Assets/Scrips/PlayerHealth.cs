@@ -13,31 +13,18 @@ public class PlayerHealth : MonoBehaviour
 [SerializeField] float range = 5;
 private int damage = 5;
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth = currentHealth - damage;
-        GotHit.Play();
+   
 
-        if (currentHealth <= 0 && amIDead == false)
-        {           
-            Debug.Log("YOU DEAD: " + currentHealth);
-            amIDead = true;
-            Destroy(gameObject);
-            
-        }
-    }
-
-    IEnumerator OnTriggerStay(Collider damagebox)
+    void OnTriggerStay(Collider damagebox)
     {
         if(damagebox.tag == "damagebox")
         {
             if(hasDoneDmg == false)
             {
-                currentHealth = currentHealth - damage;
-                GotHit.Play();
-                hasDoneDmg = true;
-                yield return new WaitForSeconds(dmgDelay);
-                hasDoneDmg = false;
+                currentHealth = currentHealth - 5;
+                StartCoroutine (Smacked());
+                Debug.Log("ehhh");
+                
 
                  if (currentHealth <= 0 && amIDead == false)
                 {           
@@ -49,7 +36,13 @@ private int damage = 5;
             }
         }
     }
-
+     IEnumerator Smacked()
+    {
+        hasDoneDmg = true;
+        GotHit.Play();
+        yield return new WaitForSeconds(dmgDelay);
+        hasDoneDmg = false;
+    }
 
 
     // Start is called before the first frame update
