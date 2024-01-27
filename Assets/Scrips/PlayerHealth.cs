@@ -8,6 +8,11 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth = 20;
     public static bool amIDead = false;
 
+    private bool hasDoneDmg = false;
+[SerializeField] float dmgDelay;
+[SerializeField] float range = 5;
+private int damage = 5;
+
     public void TakeDamage(int damage)
     {
         currentHealth = currentHealth - damage;
@@ -17,9 +22,36 @@ public class PlayerHealth : MonoBehaviour
         {           
             Debug.Log("YOU DEAD: " + currentHealth);
             amIDead = true;
+            Destroy(gameObject);
             
         }
     }
+
+    IEnumerator OnTriggerStay(Collider damagebox)
+    {
+        if(damagebox.tag == "damagebox")
+        {
+            if(hasDoneDmg == false)
+            {
+                currentHealth = currentHealth - damage;
+                GotHit.Play();
+                hasDoneDmg = true;
+                yield return new WaitForSeconds(dmgDelay);
+                hasDoneDmg = false;
+
+                 if (currentHealth <= 0 && amIDead == false)
+                {           
+                    Debug.Log("YOU DEAD: " + currentHealth);
+                    amIDead = true;
+                    Destroy(gameObject);
+            
+                }
+            }
+        }
+    }
+
+
+
     // Start is called before the first frame update
     void Start()
     {

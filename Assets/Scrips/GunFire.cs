@@ -48,6 +48,7 @@ private int damage = 5;
           {
               if (hit.collider.CompareTag("hitbox"))
               {
+                  Debug.DrawRay(transform.position, transform.forward, Color.green);
                   Debug.Log("HIT;" + damage);
                   hit.collider.GetComponent<EnemyHealth>().TakeDamage(damage);
               }

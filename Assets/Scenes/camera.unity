@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 115969339}
   - component: {fileID: 115969338}
   - component: {fileID: 115969345}
+  - component: {fileID: 115969346}
   m_Layer: 0
   m_Name: Bad guy
   m_TagString: Enemy-1
@@ -237,6 +238,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &115969346
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115969336}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &612313143
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,12 +404,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: 0, y: 0.13110399, z: 0}
 --- !u!114 &612313147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,7 +634,7 @@ GameObject:
   - component: {fileID: 1482546836}
   - component: {fileID: 1482546839}
   - component: {fileID: 1482546838}
-  - component: {fileID: 1482546837}
+  - component: {fileID: 1482546840}
   m_Layer: 0
   m_Name: damage box
   m_TagString: damagebox
@@ -635,27 +657,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 115969340}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1482546837
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482546835}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &1482546838
 AudioSource:
   m_ObjectHideFlags: 0
@@ -765,7 +766,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmgDelay: 0.5
-  range: 50
+  range: 200
+--- !u!65 &1482546840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482546835}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
+  m_Center: {x: 0, y: 0.06974846, z: 0}
 --- !u!1 &1538526566
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1015,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 952549438938425394, guid: 2f4ed1edee120d5428c094e715d76b13, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7913045217074663772, guid: 2f4ed1edee120d5428c094e715d76b13, type: 3}
       propertyPath: m_Name
       value: playerWithGun
@@ -1026,6 +1052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 20
+  dmgDelay: 1
+  range: 5
 --- !u!136 &9189264691030078823
 CapsuleCollider:
   m_ObjectHideFlags: 0

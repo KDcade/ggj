@@ -16,7 +16,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0 && isEnemyDead == false)
         {           
             Debug.Log("DEAD: " + currentHealth);
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
             isEnemyDead = true;
         }
     }
