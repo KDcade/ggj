@@ -2002,7 +2002,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2121251699}
         m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
-        m_MethodName: LoadNextScene
+        m_MethodName: Resart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
