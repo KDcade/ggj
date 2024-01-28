@@ -11,5 +11,9 @@ public class gameManager : MonoBehaviour
     {
         Application.Quit();
     }
+     public void Resart()
+    {
+        SceneManager.LoadScene(1);
+    }
 
 }
