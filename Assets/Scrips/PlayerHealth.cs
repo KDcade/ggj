@@ -29,8 +29,8 @@ private int damage = 5;
                  if (currentHealth <= 0 && amIDead == false)
                 {           
                     Debug.Log("YOU DEAD: " + currentHealth);
-                    amIDead = true;
-                    Destroy(gameObject);
+                    FindObjectOfType<gameManager>().Dead();
+
             
                 }
             }
