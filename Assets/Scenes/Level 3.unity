@@ -358,13 +358,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86013204}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.79645884, y: -0.14643511, z: 0.21341048, w: 0.54650337}
-  m_LocalPosition: {x: 261, y: 30, z: 264}
+  m_LocalRotation: {x: 0.37574348, y: 0.10289182, z: -0.20888326, w: 0.8969939}
+  m_LocalPosition: {x: 260.95, y: 30.26, z: 264.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 111.087006, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 45.813, y: 2.271, z: -25.258}
 --- !u!1001 &96366188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1651,6 +1651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad guy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8383000816598977168, guid: 6cdbde2b44da7b14d8a3a45b7ec78683, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010152277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1713,6 +1717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad guy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8383000816598977168, guid: 6cdbde2b44da7b14d8a3a45b7ec78683, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010152277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2986,6 +2994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad guy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8383000816598977168, guid: 6cdbde2b44da7b14d8a3a45b7ec78683, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010152277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3789,6 +3801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad guy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8383000816598977168, guid: 6cdbde2b44da7b14d8a3a45b7ec78683, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010152277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4334,6 +4350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad guy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8383000816598977168, guid: 6cdbde2b44da7b14d8a3a45b7ec78683, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010152277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4968,6 +4988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad guy
       objectReference: {fileID: 0}
+    - target: {fileID: 8383000816598977168, guid: 6cdbde2b44da7b14d8a3a45b7ec78683, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010152277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5344,6 +5368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad guy
       objectReference: {fileID: 0}
+    - target: {fileID: 8383000816598977168, guid: 6cdbde2b44da7b14d8a3a45b7ec78683, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010152277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5661,23 +5689,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4283026871517574049, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Size.x
-      value: 2.3311043
+      value: 2.1118386
       objectReference: {fileID: 0}
     - target: {fileID: 4283026871517574049, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Size.z
-      value: 27.393932
+      value: 27.885086
       objectReference: {fileID: 0}
     - target: {fileID: 4283026871517574049, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Center.x
-      value: 0.3850843
+      value: 0.27545005
       objectReference: {fileID: 0}
     - target: {fileID: 4283026871517574049, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Center.z
-      value: -0.281804
+      value: -0.16964464
       objectReference: {fileID: 0}
     - target: {fileID: 6925728562489923970, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Size.x
-      value: 31.966759
+      value: 13.094693
       objectReference: {fileID: 0}
     - target: {fileID: 6925728562489923970, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Size.y
@@ -5685,15 +5713,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6925728562489923970, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Size.z
-      value: 2.628783
+      value: 2.1209834
       objectReference: {fileID: 0}
     - target: {fileID: 6925728562489923970, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Center.x
-      value: -2.7902062
+      value: -2.8402245
       objectReference: {fileID: 0}
     - target: {fileID: 6925728562489923970, guid: 567a0e5b255f68d46ad47e82724c678c, type: 3}
       propertyPath: m_Center.z
-      value: 0.07110418
+      value: -0.18279725
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6791,6 +6819,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8696461142331022967, guid: 7b8c6729bf271b74890e30c3aa1de16a, type: 3}
   m_PrefabInstance: {fileID: 1997612392}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2010152277 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 82226298852616266, guid: 2f4ed1edee120d5428c094e715d76b13, type: 3}
+  m_PrefabInstance: {fileID: 2140182864}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2021324851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6843,6 +6876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad guy
       objectReference: {fileID: 0}
+    - target: {fileID: 8383000816598977168, guid: 6cdbde2b44da7b14d8a3a45b7ec78683, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2010152277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
