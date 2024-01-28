@@ -449,8 +449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 1391020041831994544}
-  walkSpeed: 5
-  runSpeed: 10
+  walkSpeed: 8
+  runSpeed: 15
   jumpPower: 7
   gravity: 10
   lookSpeed: 2
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 20
-  dmgDelay: 1
+  dmgDelay: 1.5
   range: 5
 --- !u!136 &5077398859642895636
 CapsuleCollider:
@@ -504,9 +504,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c8f6b81bfeda45246af2dd106d836b9d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 53c80d77633de774fb353cfe089cf493, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
