@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
         {           
             Debug.Log("DEAD: " + currentHealth);
             Destroy(transform.parent.gameObject);
-            isEnemyDead = true;
+            
         }
     }
     // Start is called before the first frame update
